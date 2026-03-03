@@ -5,7 +5,7 @@ package auth;
 option go_package = "grpc/protos/gen/go/sso;sso";
 
 service Auth {
-  rpc Register (RegisterRequest) returns (RegisterRequest);
+  rpc Register (RegisterRequest) returns (RegisterResponse);
   rpc Login (LoginRequest) returns (LoginResponse);
   rpc IsAdmin (IsAdminRequest) returns (IsAdminResponse);
 }
